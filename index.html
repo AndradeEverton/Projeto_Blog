@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html  lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+
+        <!--garante que o site fique reponsivo, adaptando a largura da tela-->
+
+        <meta name = "viewport" content="width=device-width, initial=scale=1.0" />
+        <title> Manual do Ufraniano Sofrido</title>
+
+        <!-- Bootstrap 4.1 e CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+
+        <!-- fundo escuro. navbar-expand-lg deixa ela responsiva-->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #a39369;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Manual do Ufraniano Sofrido</a>
+                <button class="navbar navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="postagens.html">Postagens</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--mudar as cores-->
+        <header class="text-black text-center py-5" style="background-color: #fdf6e3;">
+            <div class="container">
+                <h1 class="display-4">Bem-vindo ao Manual do Estudante Sofrido</h1>
+                <p class="lead">Aqui a gente aprende, rala e sobrevive juntos!</p>
+            </div>
+        </header>
+
+        <main class="container my-5">
+            <h2 class="text-center mb-4">Postagens em destaque</h2>
+
+            <!-- Carrossel com slides clicáveis, legendas e fundo escuro -->
+            <div id="carouselPosts" class="carousel slide mb-5" data-ride="carousel" style="position: relative;">
+            <!-- Indicadores -->
+            <ol class="carousel-indicators">
+                <li data-target="#carouselPosts" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselPosts" data-slide-to="1"></li>
+                <li data-target="#carouselPosts" data-slide-to="2"></li>
+                <li data-target="#carouselPosts" data-slide-to="3"></li>
+                <li data-target="#carouselPosts" data-slide-to="4"></li>
+            </ol>
+
+            <!-- POSTAGENS -->
+                <div class="carousel-inner" style="height: 300px;">
+                    <!-- Postagem 1 -->
+                    <div class="carousel-item active" style="height: 300px;">
+                        <a href="post1.html" class="d-block h-100 w-100 position-relative">
+                        <img src="manual_do_estudante_sofrido/imagens/post1.jpg"
+                            class="d-block w-100 h-100"
+                            style="object-fit: cover;"
+                            alt="Post 1">
+                        <div class="carousel-caption d-none d-md-block px-5 d-flex flex-column justify-content-center align-items-center"
+                            style="background-color: rgba(101, 63, 53, 0.333); width: calc(100% - 40px); height: calc(100% - 40px); left: 20px; top: 20px; border-radius: 20px;">
+                            <h5 class="text-dark">Como estudar antes da prova em 1 dia</h5>
+                            <p class="text-dark">Dicas rápidas pra salvar seu semestre. Testado em situações desesperadoras.</p>
+                        </div>
+                        </a>
+                    </div>
+
+                    <!-- Postagem 2 -->
+                    <div class="carousel-item" style="height: 300px;">
+                        <a href="post2.html" class="d-block h-100 w-100 position-relative">
+                        <img src="manual_do_estudante_sofrido/imagens/post2.jpg"
+                            class="d-block w-100 h-100"
+                            style="object-fit: cover;"
+                            alt="Post 2">
+                        <div class="carousel-caption d-none d-md-block px-5 d-flex flex-column justify-content-center align-items-center"
+                            style="background-color: rgba(101, 63, 53, 0.333); width: calc(100% - 40px); height: calc(100% - 40px); left: 20px; top: 20px; border-radius: 20px;">
+                            <h5 class="text-dark">5 formas de aprender sem decorar</h5>
+                            <p class="text-dark">Memorize com compreensão e raciocínio. Aprendizado real, sem enrolação.</p>
+                        </div>
+                        </a>
+                    </div>
+
+                    <!-- Postagem 3 -->
+                    <div class="carousel-item" style="height: 300px;">
+                        <a href="post3.html" class="d-block h-100 w-100 position-relative">
+                        <img src="manual_do_estudante_sofrido/imagens/post3.jpg"
+                            class="d-block w-100 h-100"
+                            style="object-fit: cover;"
+                            alt="Post 3">
+                        <div class="carousel-caption d-none d-md-block px-5 d-flex flex-column justify-content-center align-items-center"
+                            style="background-color: rgba(101, 63, 53, 0.333); width: calc(100% - 40px); height: calc(100% - 40px); left: 20px; top: 20px; border-radius: 20px;">
+                            <h5 class="text-dark">Sobreviva à semana de provas</h5>
+                            <p class="text-dark">Rotina inteligente, alimentação e como dormir sem culpa.</p>
+                        </div>
+                        </a>
+                    </div>
+
+                    <!-- Postagem 4 -->
+                    <div class="carousel-item" style="height: 300px;">
+                        <a href="post4.html" class="d-block h-100 w-100 position-relative">
+                        <img src="manual_do_estudante_sofrido/imagens/post4.jpg"
+                            class="d-block w-100 h-100"
+                            style="object-fit: cover;"
+                            alt="Post 4">
+                        <div class="carousel-caption d-none d-md-block px-5 d-flex flex-column justify-content-center align-items-center"
+                            style="background-color: rgba(101, 63, 53, 0.333); width: calc(100% - 40px); height: calc(100% - 40px); left: 20px; top: 20px; border-radius: 20px;">
+                            <h5 class="text-dark">Ferramentas gratuitas para estudar melhor</h5>
+                            <p class="text-dark">Sites, apps e recursos que todo Ufraniano Sofrido precisa conhecer.</p>
+                        </div>
+                        </a>
+                    </div>
+
+                    <!-- Postagem 5 -->
+                    <div class="carousel-item" style="height: 300px;">
+                        <a href="post5.html" class="d-block h-100 w-100 position-relative">
+                        <img src="manual_do_estudante_sofrido/imagens/post5.jpg"
+                            class="d-block w-100 h-100"
+                            style="object-fit: cover;"
+                            alt="Post 5">
+                        <div class="carousel-caption d-none d-md-block px-5 d-flex flex-column justify-content-center align-items-center"
+                            style="background-color: rgba(101, 63, 53, 0.333); width: calc(100% - 40px); height: calc(100% - 40px); left: 20px; top: 20px; border-radius: 20px;">
+                            <h5 class="text-dark">Como montar um cronograma de estudos</h5>
+                            <p class="text-dark">Aprenda a organizar tempo, prioridades e descanso sem surtar.</p>
+                        </div>
+                        </a>
+                    </div>
+                    </div>
+
+
+            <!-- Controles -->
+            <a class="carousel-control-prev" href="#carouselPosts" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" style="filter: invert(1);"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselPosts" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" style="filter: invert(1);"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+            </div>
+
+
+            <!-- postagens em destaque -->
+            <h2 class="text-dark fw-bold fs-5 px-3 pb-2 pt-4 text-center">Destaques da semana!</h2>
+            <div class="bg-light p-3 rounded">
+            <div class="row">
+                <!-- Item 1 -->
+                <div class="col-6 mb-3">
+                <a href="pagina1.html" class="d-flex align-items-center gap-3 p-2 bg-white rounded sha dow-sm text-decoration-none">
+                    <div class="d-flex align-items-center justify-content-center rounded bg-secondary text-white flex-shrink-0" style="width:48px; height:48px; font-weight:bold; font-size:18px;">
+                    🚌
+                    </div>
+
+                    <div class="conteudo">
+                    <p class="tt mb-1 fw-semibold text-dark text-truncate" style="max-width: 300px;"> Transporte público</p>
+                    <p class="mb-0 text-muted small text-truncate" style="max-width: 300px;"> Alunos Ufranianos se divertem em ônibus lotado!</p>
+                    </div>
+                </a>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="col-6 mb-3">
+                <a href="pagina2.html" class="d-flex align-items-center gap-3 p-2 bg-white rounded shadow-sm text-decoration-none">
+                    <div class="d-flex align-items-center justify-content-center rounded bg-secondary text-white flex-shrink-0" style="width:48px; height:48px; font-weight:bold; font-size:18px;">
+                    👩‍🌾
+                    </div>
+                    <div class="conteudo">
+                    <p class="mb-1 fw-semibold text-dark text-truncate" > Qual melhor curso de agrárias?</p>
+                    <p class="mb-0 text-muted small text-truncate" style="max-width: 300px;"> Cientistas (alunos) afirmam que o melhor curso é...</p>
+                    </div>
+                </a>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="col-6 mb-3">
+                <a href="pagina3.html" class="d-flex align-items-center gap-3 p-2 bg-white rounded shadow-sm text-decoration-none">
+                    <div class="d-flex align-items-center justify-content-center rounded bg-secondary text-white flex-shrink-0" style="width:48px; height:48px; font-weight:bold; font-size:18px;">
+                    📓
+                    </div>
+                    <div class="conteudo">
+                    <p class="mb-1 fw-semibold text-dark text-truncate" > Cadernos: Obrigatórios ou não?</p>
+                    <p class="mb-0 text-muted small text-truncate" style="max-width: 300px;"> Ufranianos discutem a importância do caderno na universidade</p>
+                    </div>
+                </a>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="col-6 mb-3">
+                <a href="pagina3.html" class="d-flex align-items-center gap-3 p-2 bg-white rounded shadow-sm text-decoration-none">
+                    <div class="d-flex align-items-center justify-content-center rounded bg-secondary text-white flex-shrink-0" style="width:48px; height:48px; font-weight:bold; font-size:18px;">
+                    📶
+                    </div>
+                    <div class="conteudo">
+                    <p class="mb-1 fw-semibold text-dark text-truncate" > item4</p>
+                    <p class="mb-0 text-muted small text-truncate" style="max-width: 300px;"> imagine que aqui tenha um texto legal</p>
+                    </div>
+                </a>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="col-6 mb-3">
+                <a href="pagina3.html" class="d-flex align-items-center gap-3 p-2 bg-white rounded shadow-sm text-decoration-none">
+                    <div class="d-flex align-items-center justify-content-center rounded bg-secondary text-white flex-shrink-0" style="width:48px; height:48px; font-weight:bold; font-size:18px;">
+                    📶
+                    </div>
+                    <div class="conteudo">
+                    <p class="mb-1 fw-semibold text-dark text-truncate" > item5</p>
+                    <p class="mb-0 text-muted small text-truncate" style="max-width: 300px;"> aqui ainda tem um texto </p>
+                    </div>
+                </a>
+                </div>
+                    
+                <!-- Item 6 -->
+                <div class="col-6 mb-3">
+                <a href="pagina3.html" class="d-flex align-items-center gap-3 p-2 bg-white rounded shadow-sm text-decoration-none">
+                    <div class="d-flex align-items-center justify-content-center rounded bg-secondary text-white flex-shrink-0" style="width:48px; height:48px; font-weight:bold; font-size:18px;">
+                    🎶
+                    </div>
+                    <div class="conteudo">
+                    <p class="mb-1 fw-semibold text-dark text-truncate" > item6</p>
+                    <p class="mb-0 text-muted small text-truncate" style="max-width: 300px;"> o daqui é melhor que os dois primeiros </p>
+                    </div>
+                </a>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="col-6 mb-3">
+                <a href="pagina3.html" class="d-flex align-items-center gap-3 p-2 bg-white rounded shadow-sm text-decoration-none">
+                    <div class="d-flex align-items-center justify-content-center rounded bg-secondary text-white flex-shrink-0" style="width:48px; height:48px; font-weight:bold; font-size:18px;">
+                    📶
+                    </div>
+                    <div class="conteudo">
+                    <p class="mb-1 fw-semibold text-dark text-truncate" > item7</p>
+                    <p class="mb-0 text-muted small text-truncate" style="max-width: 300px;"> calma que o item 8 será divertido </p>
+                    </div>
+                </a>
+                </div>
+
+                <!-- Item 8 -->
+                <div class="col-6 mb-3">
+                <a href="pagina3.html" class="d-flex align-items-center gap-3 p-2 bg-white rounded shadow-sm text-decoration-none">
+                    <div class="d-flex align-items-center justify-content-center rounded bg-secondary text-white flex-shrink-0" style="width:48px; height:48px; font-weight:bold; font-size:18px;">
+                    📶
+                    </div>
+                    <div class="conteudo">
+                    <p class="mb-1 fw-semibold text-dark text-truncate" > item8</p>
+                    <p class="mb-0 text-muted small text-truncate" style="max-width: 300px;"> olá! eu sou divertido </p>
+                    </div>
+                </a>
+                </div>
+
+                <!-- Item 9 -->
+                <div class="col-6 mb-3">
+                <a href="pagina3.html" class="d-flex align-items-center gap-3 p-2 bg-white rounded shadow-sm text-decoration-none">
+                    <div class="d-flex align-items-center justify-content-center rounded bg-secondary text-white flex-shrink-0" style="width:48px; height:48px; font-weight:bold; font-size:18px;">
+                    📶
+                    </div>
+                    <div class="conteudo">
+                    <p class="mb-1 fw-semibold text-dark text-truncate" > item9</p>
+                    <p class="mb-0 text-muted small text-truncate" style="max-width: 300px;"> estamos chegando ao fim </p>
+                    </div>
+                </a>
+                </div>
+
+                <!-- Item 10 -->
+                <div class="col-6 mb-3">
+                <a href="pagina3.html" class="d-flex align-items-center gap-3 p-2 bg-white rounded shadow-sm text-decoration-none">
+                    <div class="d-flex align-items-center justify-content-center rounded bg-secondary text-white flex-shrink-0" style="width:48px; height:48px; font-weight:bold; font-size:18px;">
+                    📶
+                    </div>
+                    <div class="conteudo"> 
+                    <p class="mb-1 fw-semibold text-dark text-truncate"> item10</p>
+                    <p class="mb-0 text-muted small text-truncate" style="max-width: 300px;"> foi uma jornada interessante </p>
+                    </div>
+                </a>
+                </div>
+            </div>
+            </div>
+        </main>
+
+        <footer class="text-white text-center py-1" style="background-color: #a39369;">
+            <p class="mb-0">&copy; 2025 Manual do Estudante Sofrido. Todos os direitos reservados.</p>
+        </footer>
+
+        <!-- Scripts Bootstrap 4.1 -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    </body>
+</html>
